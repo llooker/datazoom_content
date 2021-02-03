@@ -134,7 +134,7 @@ view: user_watch_content {
 
             device_id as user_id, contentGroupTitle as content, session_id
 
-          FROM datazoom_raw
+          FROM ${datazoom_raw.SQL_TABLE_NAME}
 
           GROUP BY 1, 2, 3;;
 
@@ -175,7 +175,7 @@ view: user_watch_content {
             , SUM(CASE WHEN event_type = "Playback_Start" and videoType="Content" THEN 1 END) AS plays
             , SUM(CASE WHEN event_type = 'Heartbeat' THEN 1 END) AS heartbeats
 
-            FROM datazoom_raw
+            FROM ${datazoom_raw.SQL_TABLE_NAME}
 
             GROUP BY 1;;
     }
