@@ -728,12 +728,6 @@
     series_types: {}
     hidden_fields: []
     y_axes: []
-    listen:
-      Content Group Title: datazoom_raw.content_group_title
-    row: 0
-    col: 8
-    width: 8
-    height: 9
   filters:
   - name: date
     title: date

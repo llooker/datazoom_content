@@ -210,9 +210,6 @@
     show_silhouette: false
     totals_color: "#808080"
     y_axes: []
-    listen:
-      date: datazoom_raw.timestamp_date
-      Country: datazoom_raw.country
     row: 24
     col: 16
     width: 8
